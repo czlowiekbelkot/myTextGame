@@ -1,0 +1,553 @@
+{
+  "locations": [
+    {
+      "location_id": 1,
+      "text": "Jesteś mieszkańcem Krypty 28, która została zbudowana \nprzez FaultTexPol na wypadek wojny nuklearnej. \nPo 30 latach, zapasy w krypcie się kończą, \na atmosfera staje się nieznośnie klaustrofobiczna. \n\n Decydujesz się na wyjście na powierzchnię, \naby szukać ratunku dla siebie i swoich współmieszkańców. \nNa zewnątrz jesteś świadkiem spustoszenia i zrujnowanego \nkrajobrazu, który jest wynikiem wojny jądrowej.",
+      "buttons": [
+        {"id": 1, "text": "[DALEJ]", "action": "go_to_location_2", "position": [50, 350]}
+      ]
+    },
+    {
+      "location_id": 2,
+      "text": "Przed Tobą rozpościera się dolina pozbawiona drzew, \njedynie suche kikuty i pojedyncze krzewy. \nPo prawej ściana skalna, góry z Twoim schronem.\nPo lewej wydaje się być zejście w dół, a w oddali mała osada.\nZa plecami masz wejście do schronu.\n\n Co dalej, gdzie pójdziesz, co zrobisz?",
+      "buttons": [
+        {"id": 1, "text": "[W PRZÓD]", "action": "go_to_location_4", "position": [50, 350]},
+        {"id": 2, "text": "[W LEWO]", "action": "go_to_location_17", "position": [50, 400]},
+        {"id": 3, "text": "[W PRAWO]", "action": "go_to_location_13", "position": [50, 450]},
+        {"id": 4, "text": "[ZAWRÓĆ]", "action": "go_to_location_3", "position": [50, 500]}
+      ]
+    },
+    {
+      "location_id": 3,
+      "text": "YOU ARE DIED\nGAME OVER\nTrafiła Cię zbłąkana kula czy coś...",
+      "image": "images/gameover.jpg",
+      "buttons": [
+        {"id": 1, "text": "[ZACZNIJ OD NOWA]", "action": "go_to_location_1", "position": [50, 350]}
+      ]
+    },
+    {
+      "location_id": 4,
+      "text": "Robisz krok do przodu, następny krok to krok w przepaść.\nPod twoimi nogami widzisz hehe stare urwisko, \ndobre parenaście metrów w dół.",
+      "buttons": [
+        {"id": 1, "text": "[W PRZÓD]", "action": "go_to_location_5", "position": [50, 350]},
+        {"id": 2, "text": "[W PRAWO]", "action": "go_t o_location_13", "position": [50, 400]},
+        {"id": 3, "text": "[W LEWO]", "action": "go_to_location_17", "position": [50, 450]},
+        {"id": 4, "text": "[SIKAM]", "action": "go_to_location_6", "position": [50, 500]},
+        {"id": 5, "text": "[ZAWRACAM]", "action": "go_to_location_2", "position": [50, 550]}
+      ]
+    },
+    {
+      "location_id": 5,
+      "text": "Spadasz w przepaść...",
+      "buttons": [
+        {"id": 1, "text": "[DALEJ...]", "action": "go_to_location_7", "position": [50, 350]}
+      ]
+    },
+    {
+      "location_id": 6,
+      "text": "Gratuluję - lejesz w przepaść...", 
+      "buttons": [
+        {"id": 1, "text": "[DALEJ...]", "action": "go_to_location_12", "position": [50, 350]}
+      ]
+    },
+    {
+      "location_id": 7,
+      "text": "Spadasz, lecisz niczym jaszczomb z rozłożonymi rencyma...\nLecisz i zastanawiasz się czy to był dobry wybór...",
+      "buttons": [
+        {"id": 1, "text": "[DALEJ...]", "action": "go_to_location_8", "position": [50, 350]}
+      ]
+    },
+    {
+      "location_id": 8,
+      "text": "Spadłeś, leżysz niczym placek po węgiersku rozpaćkany \nna talerzu w sosie.\nZaraz, jakim sosie? \nPod ręką wyczuwasz coś mokrego \nCo to za sos?\nKrew?",
+      "buttons": [
+        {"id": 1, "text": "[DALEJ...]", "action": "go_to_location_9", "position": [50, 350]}
+      ]
+    },
+    {
+      "location_id": 9,
+      "text": "Spadłeś, leżysz niczym placek po węgiersku rozpaćkany \nna talerzu w sosie.\nZaraz, jakim sosie? \nPod ręką wyczuwasz coś mokrego \nCo to za sos?\nKrew? \nNie - kurwa ktoś tu naszczał!",
+      "buttons": [
+        {"id": 1, "text": "[DALEJ...]", "action": "go_to_location_10", "position": [50, 350]}
+      ]
+    },
+    {
+      "location_id": 10,
+      "text": "Spadłeś, leżysz niczym placek po węgiersku rozpaćkany \nna talerzu w sosie.\nZaraz, jakim sosie? \nPod ręką wyczuwasz coś mokrego \nCo to za sos?\nKrew? \nNie - kurwa ktoś tu naszczał! \nAle żyję!\n\nWstajesz otrzepujesz się- o dziwo nic Ci nie jest.",
+      "buttons": [
+        {"id": 1, "text": "[DALEJ...]", "action": "go_to_location_11", "position": [50, 350]}
+      ]
+    },
+    {
+      "location_id": 11,
+      "text": "Przed sobą widzisz ścieżkę w stronę osady.\nPo lewej ścieżkę spowrotem na górę- w stronę schronu.\nPo prawej parę ostrokrzewów oraz zbocze góry.",
+      "buttons": [
+        {"id": 1, "text": "[W PRZÓD]", "action": "go_to_location_18", "position": [50, 350]},
+        {"id": 2, "text": "[W LEWO]", "action": "go_to_location_16", "position": [50, 400]},
+        {"id": 3, "text": "[W PRAWO]", "action": "go_to_location_3", "position": [50, 450]},
+        {"id": 4, "text": "[W TYŁ]", "action": "go_to_location_3", "position": [50, 500]}
+      ]
+    },
+    {
+      "location_id": 12,
+      "text": "Pod twoimi nogami widzisz urwisko, dobre parenaście metrów w dół.\nNastępny krok to krok w przepaść.",
+      "buttons": [
+        {"id": 1, "text": "[W PRZÓD]", "action": "go_to_location_5", "position": [50, 350]},
+        {"id": 2, "text": "[W PRAWO]", "action": "go_to_location_13", "position": [50, 400]},
+        {"id": 3, "text": "[W LEWO]", "action": "go_to_location_3", "position": [50, 450]},
+        {"id": 4, "text": "[ZAWRACAM]", "action": "go_to_location_25", "position": [50, 500]}
+      ]
+    },
+    {
+      "location_id": 2,
+      "text": "Przed Tobą rozpościera się dolina pozbawiona drzew, \njedynie suche kikuty i pojedyncze krzewy. \nPo prawej ściana skalna, góry z Twoim schronem.\nPo lewej wydaje się być zejście w dół, a w oddali mała osada.\nZa plecami masz wejście do schronu.\n\n Co dalej, gdzie pójdziesz, co zrobisz?",
+      "buttons": [
+        {"id": 1, "text": "[W PRZÓD]", "action": "go_to_location_4", "position": [50, 350]},
+        {"id": 2, "text": "[W LEWO]", "action": "go_to_location_17", "position": [50, 400]},
+        {"id": 3, "text": "[W PRAWO]", "action": "go_to_location_13", "position": [50, 450]},
+        {"id": 4, "text": "[ZAWRÓĆ]", "action": "go_to_location_3", "position": [50, 500]}
+      ]
+    },
+    {
+      "location_id": 3,
+      "text": "YOU ARE DIED\nGAME OVER\nTrafiła Cię zbłąkana kula czy coś...",
+      "image": "images/gameover.jpg",
+      "buttons": [
+        {"id": 1, "text": "[ZACZNIJ OD NOWA]", "action": "go_to_location_1", "position": [50, 350]}
+      ]
+    },
+    {
+      "location_id": 4,
+      "text": "Robisz krok do przodu, następny krok to krok w przepaść.\nPod twoimi nogami widzisz hehe stare urwisko, \ndobre parenaście metrów w dół.",
+      "buttons": [
+        {"id": 1, "text": "[W PRZÓD]", "action": "go_to_location_5", "position": [50, 350]},
+        {"id": 2, "text": "[W PRAWO]", "action": "go_t o_location_13", "position": [50, 400]},
+        {"id": 3, "text": "[W LEWO]", "action": "go_to_location_17", "position": [50, 450]},
+        {"id": 4, "text": "[SIKAM]", "action": "go_to_location_6", "position": [50, 500]},
+        {"id": 5, "text": "[ZAWRACAM]", "action": "go_to_location_2", "position": [50, 550]}
+      ]
+    },
+    {
+      "location_id": 5,
+      "text": "Spadasz w przepaść...",
+      "buttons": [
+        {"id": 1, "text": "[DALEJ...]", "action": "go_to_location_7", "position": [50, 350]}
+      ]
+    },
+    {
+      "location_id": 6,
+      "text": "Gratuluję - lejesz w przepaść...", 
+      "buttons": [
+        {"id": 1, "text": "[DALEJ...]", "action": "go_to_location_12", "position": [50, 350]}
+      ]
+    },
+    {
+      "location_id": 7,
+      "text": "Spadasz, lecisz niczym jaszczomb z rozłożonymi rencyma...\nLecisz i zastanawiasz się czy to był dobry wybór...",
+      "buttons": [
+        {"id": 1, "text": "[DALEJ...]", "action": "go_to_location_8", "position": [50, 350]}
+      ]
+    },
+    {
+      "location_id": 8,
+      "text": "Spadłeś, leżysz niczym placek po węgiersku rozpaćkany \nna talerzu w sosie.\nZaraz, jakim sosie? \nPod ręką wyczuwasz coś mokrego \nCo to za sos?\nKrew?",
+      "buttons": [
+        {"id": 1, "text": "[DALEJ...]", "action": "go_to_location_9", "position": [50, 350]}
+      ]
+    },
+    {
+      "location_id": 9,
+      "text": "Spadłeś, leżysz niczym placek po węgiersku rozpaćkany \nna talerzu w sosie.\nZaraz, jakim sosie? \nPod ręką wyczuwasz coś mokrego \nCo to za sos?\nKrew? \nNie - kurwa ktoś tu naszczał!",
+      "buttons": [
+        {"id": 1, "text": "[DALEJ...]", "action": "go_to_location_10", "position": [50, 350]}
+      ]
+    },
+    {
+      "location_id": 10,
+      "text": "Spadłeś, leżysz niczym placek po węgiersku rozpaćkany \nna talerzu w sosie.\nZaraz, jakim sosie? \nPod ręką wyczuwasz coś mokrego \nCo to za sos?\nKrew? \nNie - kurwa ktoś tu naszczał! \nAle żyję!\n\nWstajesz otrzepujesz się- o dziwo nic Ci nie jest.",
+      "buttons": [
+        {"id": 1, "text": "[DALEJ...]", "action": "go_to_location_11", "position": [50, 350]}
+      ]
+    },
+    {
+      "location_id": 11,
+      "text": "Przed sobą widzisz ścieżkę w stronę osady.\nPo lewej ścieżkę spowrotem na górę- w stronę schronu.\nPo prawej parę ostrokrzewów oraz zbocze góry.",
+      "buttons": [
+        {"id": 1, "text": "[W PRZÓD]", "action": "go_to_location_18", "position": [50, 350]},
+        {"id": 2, "text": "[W LEWO]", "action": "go_to_location_16", "position": [50, 400]},
+        {"id": 3, "text": "[W PRAWO]", "action": "go_to_location_3", "position": [50, 450]},
+        {"id": 4, "text": "[W TYŁ]", "action": "go_to_location_3", "position": [50, 500]}
+      ]
+    },
+    {
+      "location_id": 12,
+      "text": "Pod twoimi nogami widzisz urwisko, dobre parenaście metrów w dół.\nNastępny krok to krok w przepaść.",
+      "buttons": [
+        {"id": 1, "text": "[W PRZÓD]", "action": "go_to_location_5", "position": [50, 350]},
+        {"id": 2, "text": "[W PRAWO]", "action": "go_to_location_13", "position": [50, 400]},
+        {"id": 3, "text": "[W LEWO]", "action": "go_to_location_3", "position": [50, 450]},
+        {"id": 4, "text": "[ZAWRACAM]", "action": "go_to_location_25", "position": [50, 500]}
+      ]
+    },
+    {
+      "location_id": 13,
+      "text": "Widzisz ścianę skalną, czego się spodziewałeś? najman.jpg",
+      "image":"images/najman.jpg",
+      "buttons": [
+        {"id": 1, "text": "[SIKAM]", "action": "go_to_location_14", "position": [50, 350]},
+        {"id": 2, "text": "[WRÓĆ]", "action": "go_to_location_2", "position": [50, 400]}
+      ]
+    },
+    {
+      "location_id": 14,
+      "text": "Gratuluję - oddałeś mocz na kawałek skały.",
+      "buttons": [
+        {"id": 1, "text": "[WRÓĆ]", "action": "go_to_location_12", "position": [50, 350]}
+      ]
+    },
+    {
+      "location_id": 15,
+      "text": "Gratuluję - oddałeś mocz na kawałek skały.",
+      "buttons": [
+        {"id": 1, "text": "[WRÓĆ]", "action": "go_to_location_2", "position": [50, 350]}
+      ]
+    },
+    {
+      "location_id": 16,
+      "text": "Idziesz w lewo, ścieżka zdaje się prowadzić na górę.",
+      "buttons": [
+        {"id": 1, "text": "[DALEJ]", "action": "go_to_location_2", "position": [50, 350]},
+        {"id": 2, "text": "[WRÓĆ]", "action": "go_to_location_11", "position": [50, 400]}
+      ]
+    },
+    {
+      "location_id": 17,
+      "text": "Ścieżka zdaje się prowadzić na dół.",
+      "buttons": [
+        {"id": 1, "text": "[DALEJ]", "action": "go_to_location_11", "position": [50, 350]},
+        {"id": 2, "text": "[WRÓĆ]", "action": "go_to_location_2", "position": [50, 400]}
+      ]
+    },
+    {
+      "location_id": 18,
+      "text": "Idziesz w stronę osady, im bliżej jesteś tym wyraźniej\nsłyszysz jej gwar. Tam są ludzie.",
+      "buttons": [
+        {"id": 1, "text": "[DALEJ]", "action": "go_to_location_19", "position": [50, 350]},
+        {"id": 2, "text": "[WRÓĆ]", "action": "go_to_location_11", "position": [50, 400]}
+      ]
+    },
+    {
+      "location_id": 19,
+      "text": "Przechodzisz przez bramę osady, mijasz mieszkanców,\nktórzy w niczym nie przypominają Ci znanych Ci ludzi.\nInne ubrania, twarze, skóra a nawet sposób poruszania.",
+      "buttons": [
+        {"id": 1, "text": "[IDŹ DALEJ]", "action": "go_to_location_20", "position": [50, 350]},
+        {"id": 2, "text": "[KARAWANA]", "action": "go_to_location_3", "position": [50, 400]},
+        {"id": 3, "text": "[BUDYNKI]", "action": "go_to_location_3", "position": [50, 450]},
+        {"id": 4, "text": "[MIESZKAŃCY]", "action": "go_to_location_3", "position": [50, 500]}
+      ]
+    },
+    {
+      "location_id": 20,
+      "text": "Znajdujesz się teraz w tajemniczym mieście. \nMieszkańcy dziwnie się na Ciebie patrzą, \nmówiąc podobnym, choć bardzo ubogim językiem. \nW głąb miasta widać jakiś duży budynek, prezydium, \npilnowane przez dwóch uzbrojonych w zrobione ze złomu dzidy strażników.",
+      "buttons": [
+        {"id": 1, "text": "[IDŹ W STRONĘ PREZYDIUM]", "action": "go_to_location_21", "position": [50, 350]},
+        {"id": 2, "text": "[SPRAWDŹ BUDYNKI]", "action": "go_to_location_22", "position": [50, 400]},
+        {"id": 3, "text": "[ROZMÓW Z MIESZKAŃCAMI]", "action": "go_to_location_23", "position": [50, 450]}
+      ]
+    },
+    {
+      "location_id": 21,
+      "text": "Podchodzisz do prezydium, ale strażnicy na wejściu blokują Ci drogę. \nPytają, skąd przychodzisz, \ngdy wspominasz o Krypcie 28, radują się, witając Cię jako 'ChosenOne'.",
+      "buttons": [
+        {"id": 1, "text": "[WITAJCIE]", "action": "go_to_location_24", "position": [50, 350]}
+      ]
+    },
+    {
+      "location_id": 22,
+      "text": "Drzwi do zamieszkałych budynków są zamknięte, a z tych opuszczone wydziela \nsię nieprzyjemny zapach padliny i gówna. Całe miasto śmierdzi. \nNie znajdujesz nic ciekawego prócz smrodu, gruzu i śmieci.",
+      "buttons": [
+        {"id": 1, "text": "[WRÓĆ]", "action": "go_to_location_20", "position": [50, 350]}
+      ]
+    },
+    {
+      "location_id": 23,
+      "text": "Mieszkańcy dziwnie się na Ciebie patrzą, jednak mówią podobnym, \nchoć bardzo ubogim językiem. Nie zdają się być zbyt rozmowni, \nale może uda Ci się wyciągnąć jakieś informacje.",
+      "buttons": [
+        {"id": 1, "text": "[INFORMACJE]", "action": "go_to_location_25", "position": [50, 350]},
+        {"id": 2, "text": "[WRÓĆ]", "action": "go_to_location_20", "position": [50, 400]}
+      ]
+    },
+    {
+      "location_id": 24,
+      "text": "Strażnicy otwierają przed Tobą drzwi prezydium. Wchodzisz do środka, \ngdzie czeka na Ciebie przywódca miasta. \nMężczyzna w skromnej szacie wita Cię jako 'ChosenOne' \nzaczyna opowiadać Ci o historii tego miejsca...",
+      "buttons": [
+        {"id": 1, "text": "[SŁUCHAJ]", "action": "go_to_location_26", "position": [50, 350]}
+      ]
+    },
+    {
+      "location_id": 25,
+      "text": "Mieszkańcy nie wydają się zbyt chętni do rozmowy. \nKilkoro z nich jednak wskazuje w kierunku prezydium. \nMoże tam dowiesz się więcej.",
+      "buttons": [
+        {"id": 1, "text": "[IDŹ W STRONĘ PREZYDIUM]", "action": "go_to_location_21", "position": [50, 350]},
+        {"id": 2, "text": "[WRÓĆ]", "action": "go_to_location_20", "position": [50, 400]}
+      ]
+    },
+    {
+      "location_id": 26,
+      "text": "Przywódca opowiada Ci o historii miasta, o tym, jak przetrwali po wojnie nuklearnej, \no tym jak zjadali się nawzajem, o swojej roli jako lidera. \nDowiadujesz się, że jesteś uznawany za 'ChosenOne', \nktoś, kto może przynieść nadzieję i zmienić losy tego zrujnowanego miejsca.",
+      "buttons": [
+        {"id": 1, "text": "[DOWIEDZ SIĘ WIĘCEJ]", "action": "go_to_location_27", "position": [50, 350]}
+      ]
+    },
+    {
+      "location_id": 27,
+      "text": "Prezydent opowiada Ci o problemach miasta, \no braku surowców i nadchodzącym niebezpieczeństwie. \nPyta Cię, czy jesteś gotów podjąć się misji przywrócenia \nrównowagi i nadziei ich zrujnowanemu światu.",
+      "buttons": [
+        {"id": 1, "text": "[PRZYJMIJ MISJĘ]", "action": "go_to_location_28", "position": [50, 350]},
+        {"id": 2, "text": "[ODMÓW]", "action": "go_to_location_29", "position": [50, 400]}
+      ]
+    },
+    {
+      "location_id": 28,
+      "text": "Prezydent dziękuje Ci za odwagę i gotowość do pomocy. \nPrzekazuje Ci informacje na temat pierwszych kroków, \njakie musisz podjąć, aby wspólnie odbudować to zrujnowane miasto.",
+      "buttons": [
+        {"id": 1, "text": "[ROZPOCZNIJ MISJĘ]", "action": "go_to_location_30", "position": [50, 350]}
+      ]
+    },
+    {
+      "location_id": 29,
+      "text": "Prezydent wyraża smutek, ale jednocześnie szacunek dla Twojej decyzji. \nMówi, że zawsze możesz wrócić, jeśli zmienisz zdanie.",
+      "buttons": [
+        {"id": 1, "text": "[WRÓĆ DO OSADY]", "action": "go_to_location_20", "position": [50, 350]}
+      ]
+    },
+    {
+      "location_id": 30,
+      "text": "Ruszasz w drogę, gotów zmierzyć się z wyzwaniami, \njakie czekają na Ciebie w tym zrujnowanym świecie. \nOsada patrzy na Ciebie z nadzieją, \na prezydent żegna Cię życzeniem powodzenia.",
+      "buttons": [
+        {"id": 1, "text": "[DALEJ...]", "action": "go_to_location_31", "position": [50, 350]}
+      ]
+    },
+    {
+      "location_id": 31,
+      "text": "Twoja przygoda rozpoczyna się, wiodąc Cię przez zrujnowane krajobrazy, \nopuszczone miasta i niebezpieczeństwa postapokaliptycznego świata. \nTwoje decyzje kształtują losy tego nowego świata, \na misja staje się Twoim przeznaczeniem.",
+      "buttons": [
+        {"id": 1, "text": "[DALEJ]", "action": "go_to_location_32", "position": [50, 350]}
+      ]
+    },
+    {
+      "location_id": 32,
+      "text": "Podczas podróży napotykasz na pierwsze trudności \n- zmutowane stworzenia zaczynają polować na Ciebie. \nMusisz podjąć decyzję, czy unikać ich \nczy stawić im czoła zagrożeniu.",
+      "buttons": [
+        {"id": 1, "text": "[STAW CZOŁA]", "action": "go_to_location_33", "position": [50, 350]},
+        {"id": 2, "text": "[UNIKAJ]", "action": "go_to_location_34", "position": [50, 400]}
+      ]
+    },
+    {
+      "location_id": 33,
+      "text": "Walka z mutantami jest zacięta, lecz niestety, \nprzeciwnicy są silniejsi. \nZostajesz pokonany, a świat traci swojego potencjalnego wybawcę. \nTwoja historia kończy się tutaj.",
+      "buttons": [
+        {"id": 1, "text": "[UMRZYJ]", "action": "go_to_location_3", "position": [50, 350]}
+      ]
+    },
+    {
+      "location_id": 34,
+      "text": "Postanawiasz unikać potworów. \nZmykasz z miejsca zanim zauważą Twoją obecność. \nTo jednak oznacza, że ominąłeś pewne informacje i potencjalne zasoby, \nktóre mogły być przydatne w dalszej podróży.",
+      "buttons": [
+        {"id": 1, "text": "[DALEJ...]", "action": "go_to_location_35", "position": [50, 350]}
+      ]
+    },
+    {
+      "location_id": 35,
+      "text": "Kolejne dni podróży przynoszą nowe wyzwania. \nZ dala widzisz dymiące ruiny miasta, \nmoże tam znajdziesz odpowiedzi na pytania \ndotyczące przyczyn wojny nuklearnej i losów świata.",
+      "buttons": [
+        {"id": 1, "text": "[PODRÓŻ DO RUIN]", "action": "go_to_location_36", "position": [50, 350]},
+        {"id": 2, "text": "[KONTYNUUJ PODRÓŻ]", "action": "go_to_location_37", "position": [50, 400]}
+      ]
+    },
+    {
+      "location_id": 36,
+      "text": "Przechodzisz przez zgliszcza miasta, \nświadkiem niszczycielskiej siły wojny nuklearnej. \nSzukasz w ruinach informacji, \nktóre mogą pomóc w zrozumieniu przeszłości i przyszłości tego świata.",
+      "buttons": [
+        {"id": 1, "text": "[SZUKAJ INFORMACJI]", "action": "go_to_location_38", "position": [50, 350]},
+        {"id": 2, "text": "[KONTYNUUJ PODRÓŻ]", "action": "go_to_location_37", "position": [50, 400]}
+      ]
+    },
+    {
+      "location_id": 37,
+      "text": "Podczas dalszej podróży napotykasz na grupę ocalałych, \nktórzy oferują Ci schronienie na noc. \nDecydujesz się do nich dołączyć, czy olewasz brudasów?.",
+      "buttons": [
+        {"id": 1, "text": "[PRZYJMIJ OFERTĘ]", "action": "go_to_location_39", "position": [50, 350]},
+        {"id": 2, "text": "[KONTYNUUJ PODRÓŻ]", "action": "go_to_location_40", "position": [50, 400]}
+      ]
+    },
+    {
+      "location_id": 38,
+      "text": "W ruinach znajdujesz zapiski i dokumenty, \nktóre rzucają światło na przyczyny wojny nuklearnej. \nDowiadujesz się o tajnych eksperymentach i zdradzie prezydenta, \nktóra doprowadziła do globalnej katastrofy.",
+      "buttons": [
+        {"id": 1, "text": "[WRACAJ DO OSADY]", "action": "go_to_location_41", "position": [50, 350]},
+        {"id": 2, "text": "[KONTYNUUJ PODRÓŻ]", "action": "go_to_location_42", "position": [50, 400]}
+      ]
+    },
+    {
+      "location_id": 39,
+      "text": "Decydujesz się na nocleg w obozie ocalałych. \nSpotykasz różnorodną grupę ludzi, każdy z własną historią. \nMoże to być szansa na początek pieknej przyjaźni.",
+      "buttons": [
+        {"id": 1, "text": "[ROZMAWIAJ]", "action": "go_to_location_43", "position": [50, 350]},
+        {"id": 2, "text": "[KONTYNUUJ PODRÓŻ]", "action": "go_to_location_44", "position": [50, 400]}
+      ]
+    },
+    {
+      "location_id": 40,
+      "text": "Podczas dalszej podróży napotykasz na stado dzikich psów. \nMusisz szybko podjąć decyzję, \njak się zachować wobec tego nowego zagrożenia.",
+      "buttons": [
+        {"id": 1, "text": "[UNIKAJ]", "action": "go_to_location_41", "position": [50, 350]},
+        {"id": 2, "text": "[STAW CZOŁA]", "action": "go_to_location_42", "position": [50, 400]}
+      ]
+    },
+    {
+      "location_id": 41,
+      "text": "Zmykasz z miejsca, starając udać się prosto do osady.",
+      "buttons": [
+        {"id": 1, "text": "[DALEJ...]", "action": "go_to_location_43", "position": [50, 350]}
+      ]
+    },
+    {
+      "location_id": 42,
+      "text": "Postanawiasz stawić czoła dzikim psom. Walka jest trudna, \nale dzięki twoim umiejętnościom udaje Ci się odeprzeć atak. \nPrzekraczasz obszar, który mógłby być niebezpieczny dla innych podróżnych.",
+      "buttons": [
+        {"id": 1, "text": "[DALEJ...]", "action": "go_to_location_43", "position": [50, 350]}
+      ]
+    },
+    {
+      "location_id": 43,
+      "text": "Powoli robi się ciemno, \ndocierasz do jakiś zabudowań na ogrodzonym terenie",
+      "buttons": [
+        {"id": 1, "text": "[EKSPLORUJ]", "action": "go_to_location_45", "position": [50, 350]}
+      ]
+    },
+    {
+      "location_id": 44,
+      "text": "Obozowisko ocalałych staje się dla Ciebie bezpiecznym przystankiem. \nLudzie dzielą się z Tobą swoimi historiami. \nW jednym z namiotów znajdujesz podejrzanej wyglądu urządzenie, \nmoże to być cenna zdobycz albo pułapka.",
+      "buttons": [
+        {"id": 1, "text": "[SPRÓBUJ ODKRYĆ URZĄDZENIE]", "action": "go_to_location_3", "position": [50, 350]},
+        {"id": 2, "text": "[OMIŃ NAMIOT I KONTYNUUJ PODRÓŻ]", "action": "go_to_location_3", "position": [50, 400]},
+        {"id": 3, "text": "[POROZMAWIAJ Z OCALEŁYMI]", "action": "go_to_location_3", "position": [50, 450]}
+      ]
+    },
+    {
+      "location_id": 45,
+      "text": "Podczas eksploracji terenu napotykasz na radioaktywne zanieczyszczenia. \nTwoje zdrowie zaczyna gwałtownie się pogarszać. \nMusisz szybko podjąć decyzję, czy ryzykować zdrowie, \nczy wrócić do bezpiecznego schronienia.",
+      "buttons": [
+        {"id": 1, "text": "[UMRZYJ XD]", "action": "go_to_location_3", "position": [50, 350]},
+        {"id": 2, "text": "[WRÓĆ DO SCHRONIENIA]", "action": "go_to_location_3", "position": [50, 400]}
+      ]
+    },
+    {
+      "location_id": 46,
+      "text": "Docierasz do wielkiego gmachu, który wydaje się być miejscem ważnym dla ocalałych. Przed wejściem dostrzegasz dwóch uzbrojonych strażników.",
+      "buttons": [
+        {"id": 1, "text": "[ZAPYTAJ O WEJŚCIE]", "action": "go_to_location_51", "position": [50, 350]},
+        {"id": 2, "text": "[SZUKAJ INNEGO WEJŚCIA]", "action": "go_to_location_52", "position": [50, 400]},
+        {"id": 3, "text": "[OBEJRZYJ TEREN WOKÓŁ]", "action": "go_to_location_53", "position": [50, 450]}
+      ]
+    },
+    {
+      "location_id": 47,
+      "text": "Kontynuujesz podróż przez opustoszałe tereny. Nagle zauważasz w oddali grupę zbierającą surowce. Wyglądają na wrogów, ale może warto z nimi porozmawiać.",
+      "buttons": [
+        {"id": 1, "text": "[UNIKAJ I IDŹ W INNYM KIERUNKU]", "action": "go_to_location_54", "position": [50, 350]},
+        {"id": 2, "text": "[PRÓBUJ UKRYĆ SIĘ I SŁUCHAJ]", "action": "go_to_location_55", "position": [50, 400]},
+        {"id": 3, "text": "[ZAPROŚ DO ROZMOWY]", "action": "go_to_location_56", "position": [50, 450]}
+      ]
+    },
+    {
+      "location_id": 48,
+      "text": "Rzucasz się na pomoc innemu ocalałemu, który cierpi z powodu skutków radioaktywnego zanieczyszczenia. Udaje Ci się go ocalić, ale sam narażasz się na promieniowanie.",
+      "buttons": [
+        {"id": 1, "text": "[ZARYZYKUJ I POMÓŻ MU DALEJ]", "action": "go_to_location_57", "position": [50, 350]},
+        {"id": 2, "text": "[ZWRÓĆ SIĘ DO SCHRONIENIA]", "action": "go_to_location_3", "position": [50, 400]},
+        {"id": 3, "text": "[SPROBUJ OCENIĆ STOPNIEŃ PROMIENIOWANIA]", "action": "go_to_location_58", "position": [50, 450]}
+      ]
+    },
+    {
+      "location_id": 49,
+      "text": "Podczas eksploracji urządzenia w namiocie, natrafiasz na ukryty wybuchowy mechanizm. Masz tylko chwilę, aby podjąć decyzję.",
+      "buttons": [
+        {"id": 1, "text": "[PRÓBUJ ROZRUCHAĆ I DEZAKTYWUJ WYBUCH]", "action": "go_to_location_59", "position": [50, 350]},
+        {"id": 2, "text": "[RZUĆ URZĄDZENIE NA ZEWNĄTRZ NAMIOTU]", "action": "go_to_location_60", "position": [50, 400]},
+        {"id": 3, "text": "[ZRYWAJ I UCIEKAJ]", "action": "go_to_location_61", "position": [50, 450]}
+      ]
+    },
+    {
+      "location_id": 50,
+      "text": "Rozmawiasz z ocalałymi, dowiadując się o innych grupach i potencjalnych miejscach, które warto odwiedzić. Jednak nie wszyscy są przyjaźnie nastawieni.",
+      "buttons": [
+        {"id": 1, "text": "[OBSERWUJ I WYCOFAJ SIĘ]", "action": "go_to_location_62", "position": [50, 350]},
+        {"id": 2, "text": "[PROŚ O SZCZEGÓŁY MIEJSC DO ODWIEDZENIA]", "action": "go_to_location_63", "position": [50, 400]},
+        {"id": 3, "text": "[PRÓBUJ ZJEDNAĆ PRZYCHYLNOŚĆ]", "action": "go_to_location_64", "position": [50, 450]}
+      ]
+    },
+    {
+      "location_id": 51,
+      "text": "Zapytujesz strażników o zgodę na wejście do gmachu. Odpowiadają, że musisz uzyskać zgodę od ich przełożonego, który aktualnie jest niedostępny.",
+      "buttons": [
+        {"id": 1, "text": "[POCZEKAJ NA PRZEŁOŻONEGO]", "action": "go_to_location_65", "position": [50, 350]},
+        {"id": 2, "text": "[SPRÓBUJ SZUKAĆ INNEGO WEJŚCIA]", "action": "go_to_location_66", "position": [50, 400]},
+        {"id": 3, "text": "[PRÓBUJ PRZEKONAĆ STRAŻNIKÓW DO WPUŚCENIA]", "action": "go_to_location_67", "position": [50, 450]}
+      ]
+    },
+    {
+      "location_id": 52,
+      "text": "Skanując teren wokół, dostrzegasz otwór w ścianie, który mógłby prowadzić do wnętrza gmachu. Jest jednak ryzykowny, a tam może czekać niebezpieczeństwo.",
+      "buttons": [
+        {"id": 1, "text": "[SPRÓBUJ WEJŚĆ PRZEZ OTWÓR]", "action": "go_to_location_68", "position": [50, 350]},
+        {"id": 2, "text": "[SZUKAJ INNEGO BEZPIECZNIEJSZEGO WEJŚCIA]", "action": "go_to_location_69", "position": [50, 400]},
+        {"id": 3, "text": "[WRÓĆ I PODZIEL SIĘ INFORMACJĄ Z OCALEŁYMI]", "action": "go_to_location_70", "position": [50, 450]}
+      ]
+    },
+    {
+      "location_id": 53,
+      "text": "Obejrzawszy teren wokół gmachu, dostrzegasz ukrytą klapę w ziemi. Może to być ukryte wejście lub pułapka.",
+      "buttons": [
+        {"id": 1, "text": "[OTWÓRZ KLAPĘ I WEJDŹ]", "action": "go_to_location_71", "position": [50, 350]},
+        {"id": 2, "text": "[OSTRZEŻ OCALEŁYCH I IDŹ INNĄ DROGĄ]", "action": "go_to_location_72", "position": [50, 400]},
+        {"id": 3, "text": "[BADAJ KLAPĘ, BY SPRAWDZIĆ PUŁAPKĘ]", "action": "go_to_location_73", "position": [50, 450]}
+      ]
+    },
+    {
+      "location_id": 54,
+      "text": "Unikasz spotkania z grupą zbierającą surowce, wybierając inną ścieżkę. Zdajesz sobie sprawę, że możesz być zauważony przez innych wędrujących ocalałych.",
+      "buttons": [
+        {"id": 1, "text": "[PRZYSPIESZ I OMIŃ ICH SZLAK]", "action": "go_to_location_74", "position": [50, 350]},
+        {"id": 2, "text": "[UKRYJ SIĘ I CZEKAJ, AŻ ZMIENIĄ KIERUNEK]", "action": "go_to_location_75", "position": [50, 400]},
+        {"id": 3, "text": "[PRÓBUJ PODJĄĆ KONWERSACJĘ Z DALIKA]", "action": "go_to_location_76", "position": [50, 450]}
+      ]
+    },
+    {
+      "location_id": 55,
+      "text": "Podkradasz się, starając się być niezauważonym. Słyszysz ich rozmowę, a informacje, które zdobywasz, mogą być przydatne w przyszłości.",
+      "buttons": [
+        {"id": 1, "text": "[WYJDŹ Z ICH ZASIĘGU I KONTYNUUJ PODRÓŻ]", "action": "go_to_location_77", "position": [50, 350]},
+        {"id": 2, "text": "[WRÓĆ DO OBOZOWISKA I PODZIEL SIĘ INFORMACJĄ]", "action": "go_to_location_78", "position": [50, 400]},
+        {"id": 3, "text": "[SPROBUJ PRZYSŁUCHIWAĆ SIĘ DALEJ]", "action": "go_to_location_79", "position": [50, 450]}
+      ]
+    },
+    {
+      "location_id": 56,
+      "text": "Próbujesz nawiązać rozmowę z grupą zbierającą surowce. Okazuje się, że są otwarci na nowych ludzi, ale mają swoje warunki. Musisz coś zaoferować w zamian za informacje.",
+      "buttons": [
+        {"id": 1, "text": "[POKAŻ, CO MASZ W TORBIE]", "action": "go_to_location_80", "position": [50, 350]},
+        {"id": 2, "text": "[OBIECAJ POMOC W ZBIERANIU SUROWCÓW]", "action": "go_to_location_81", "position": [50, 400]},
+        {"id": 3, "text": "[ZAPROPUJ WSPÓLNĄ PODRÓŻ]", "action": "go_to_location_82", "position": [50, 450]}
+      ]
+    },
+    {
+      "location_id": 57,
+      "text": "Tu się na razie kończy ta przygoda.",
+      "buttons": [
+        {"id": 1, "text": "[UMRZYJ XD]", "action": "go_to_location_3", "position": [50, 350]}
+      ]
+    }
+  ]
+}
