@@ -63,7 +63,7 @@ def main_menu():
                 sys.exit(0)
 
         # Background
-        background = pygame.image.load("background.jpg")
+        background = pygame.image.load("images/background.jpg")
         background = pygame.transform.scale(background, (screen_width, screen_height))
         screen.blit(background, (0, 0))
 
@@ -161,7 +161,7 @@ def show_credits():
             elif event.type == pygame.KEYDOWN and event.key == pygame.K_ESCAPE:
                 return "main_menu"
 
-        background = pygame.image.load("background.jpg")
+        background = pygame.image.load("images/background.jpg")
         background = pygame.transform.scale(background, (screen_width, screen_height))
         screen.blit(background, (0, 0))
 
@@ -205,7 +205,7 @@ def options():
             elif event.type == pygame.KEYDOWN and event.key == pygame.K_ESCAPE:
                 return "main_menu"
 
-        background = pygame.image.load("background.jpg")
+        background = pygame.image.load("images/background.jpg")
         background = pygame.transform.scale(background, (screen_width, screen_height))
         screen.blit(background, (0, 0))
 
@@ -250,7 +250,7 @@ def play():
             elif event.type == pygame.KEYDOWN and event.key == pygame.K_ESCAPE:
                 return "main_menu"
 
-        background = pygame.image.load("background.jpg")
+        background = pygame.image.load("images/background.jpg")
         background = pygame.transform.scale(background, (screen_width, screen_height))
         screen.blit(background, (0, 0))
 
