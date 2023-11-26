@@ -8,10 +8,12 @@ pygame.mixer.init()
 
 # Sounds
 clickSound = pygame.mixer.Sound("sound/click.wav")
+pygame.mixer.music.load("sound/music.mp3")
+pygame.mixer.music.play(loops=-1)
+pygame.mixer.music.set_volume(0.5)
 
 # FPS
 clock = pygame.time.Clock()
-
 
 # Screen options
 screen_width = 800
@@ -27,8 +29,11 @@ grey = (190, 190, 190)
 current_state = "main_menu"
 current_location_id = 1
 
-# Button image
+# Images
 button_image = pygame.image.load("buttons/button.jpg")
+# Background
+background = pygame.image.load("images/background.jpg")
+background = pygame.transform.scale(background, (screen_width, screen_height))
 
 # Drawing text + drawin new lines form JSON file
 def draw_text(text, font, color, surface, x, y):
@@ -56,15 +61,8 @@ def main_menu():
     global current_state
 
     while True:
-        for event in pygame.event.get():
-            if event.type == pygame.QUIT:
-                sys.exit(0)
-            elif event.type == pygame.KEYDOWN and event.key == pygame.K_ESCAPE:
-                sys.exit(0)
-
+              
         # Background
-        background = pygame.image.load("images/background.jpg")
-        background = pygame.transform.scale(background, (screen_width, screen_height))
         screen.blit(background, (0, 0))
 
         # Title
@@ -110,34 +108,27 @@ def main_menu():
         # Refresh screen
         pygame.display.update()
 
-        # Mouse handling
-        mouse = pygame.mouse.get_pos()
-        click = pygame.mouse.get_pressed()
-
-        # Click Play button
-        if play_button.collidepoint(mouse) and click[0] == 1:
-            current_state = "play"
-            clickSound.play()
-            return
-
-        # Click Options button
-        if options_button.collidepoint(mouse) and click[0] == 1:
-            current_state = "options"
-            clickSound.play()
-            return
-
-        # and Credits
-        if credits_button.collidepoint(mouse) and click[0] == 1:
-            current_state = "credits"
-            clickSound.play()
-            return
-
-        # and Exit
-        if exit_button.collidepoint(mouse) and click[0] == 1:
-            clickSound.play()
-            sys.exit(0)
-            return
-
+        # For clicking on buttons
+        for event in pygame.event.get():
+            if event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
+                clickSound.play()
+                if play_button.collidepoint(event.pos):
+                    current_state = "play"
+                    return
+                elif options_button.collidepoint(event.pos):
+                    current_state = "options"
+                    return
+                elif credits_button.collidepoint(event.pos):
+                    current_state = "credits"
+                    return
+                elif exit_button.collidepoint(event.pos):
+                    sys.exit(0)
+                    return
+            # For exit event (ESC and X button)
+            if event.type == pygame.QUIT:
+                sys.exit(0)
+            elif event.type == pygame.KEYDOWN and event.key == pygame.K_ESCAPE:
+                sys.exit(0)
 
 # Credits
 def show_credits():
@@ -145,7 +136,7 @@ def show_credits():
         "Autor: Człowiek Bełkot",
         "Grafika: Człowiek Bełkot",
         "Scenariusz: Człowiek Bełkot & Syn and ChatGPT",
-        "Muzyka: Brak",
+        "Muzyka: pixabay.com",
         "Dźwięki: z nielegalnych źródeł",
         "Podziękowania:",
         "Dziękuję @babcia_would_to_hug_you", 
@@ -155,14 +146,7 @@ def show_credits():
     ]
 
     while True:
-        for event in pygame.event.get():
-            if event.type == pygame.QUIT:
-                sys.exit(0)
-            elif event.type == pygame.KEYDOWN and event.key == pygame.K_ESCAPE:
-                return "main_menu"
-
-        background = pygame.image.load("images/background.jpg")
-        background = pygame.transform.scale(background, (screen_width, screen_height))
+        
         screen.blit(background, (0, 0))
 
         title_font = pygame.font.Font(None, 50)
@@ -183,30 +167,26 @@ def show_credits():
                   back_button.y + (back_button.height - text_font.size("Back")[1]) // 2)
         pygame.display.update()
 
-        mouse = pygame.mouse.get_pos()
-        click = pygame.mouse.get_pressed()
-
-        if back_button.collidepoint(mouse):
-            if click[0] == 1:
-                clickSound.play()
-                return "main_menu"
-
-
-# Options
-def options():
-    options_text = [
-        "You don'y have any options."
-    ]
-
-    while True:
         for event in pygame.event.get():
+            if event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
+                clickSound.play()
+                if back_button.collidepoint(event.pos):
+                    clickSound.play()
+                    return "main_menu"
+            # For exit event (ESC and X button)
             if event.type == pygame.QUIT:
                 sys.exit(0)
             elif event.type == pygame.KEYDOWN and event.key == pygame.K_ESCAPE:
                 return "main_menu"
+        
+# Options
+def options():
+    options_text = [
+        "You don't have any options."
+    ]
 
-        background = pygame.image.load("images/background.jpg")
-        background = pygame.transform.scale(background, (screen_width, screen_height))
+    while True:
+        
         screen.blit(background, (0, 0))
 
         title_font = pygame.font.Font(None, 50)
@@ -226,14 +206,18 @@ def options():
                   back_button.y + (back_button.height - text_font.size("Back")[1]) // 2)
         pygame.display.update()
 
-        mouse = pygame.mouse.get_pos()
-        click = pygame.mouse.get_pressed()
-
-        if back_button.collidepoint(mouse):
-            if click[0] == 1:
+        # For clicking on buttons
+        for event in pygame.event.get():
+            if event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
                 clickSound.play()
+                if back_button.collidepoint(event.pos):
+                    clickSound.play()
+                    return "main_menu"
+            # For exit event (ESC and X button)
+            if event.type == pygame.QUIT:
+                sys.exit(0)
+            elif event.type == pygame.KEYDOWN and event.key == pygame.K_ESCAPE:
                 return "main_menu"
-
 
 # Play
 def play():
@@ -244,14 +228,7 @@ def play():
         data = json.load(file)
 
     while True:
-        for event in pygame.event.get():
-            if event.type == pygame.QUIT:
-                sys.exit(0)
-            elif event.type == pygame.KEYDOWN and event.key == pygame.K_ESCAPE:
-                return "main_menu"
-
-        background = pygame.image.load("images/background.jpg")
-        background = pygame.transform.scale(background, (screen_width, screen_height))
+        
         screen.blit(background, (0, 0))
 
         # Find current location in JSON file
@@ -291,7 +268,7 @@ def play():
                 width = max(150, text_width + 20)
                 height = 36
 
-                # Scaling button to the lengh of text
+                # Scaling button to the length of text
                 scaled_image = pygame.transform.scale(button_image, (width, height))
                 button_rect.width = width
 
@@ -304,13 +281,6 @@ def play():
                 # Drawing text on the button
                 draw_text(button["text"], button_font, grey, screen, text_x, text_y)
 
-                mouse = pygame.mouse.get_pos()
-                click = pygame.mouse.get_pressed()
-
-                if button_rect.collidepoint(mouse) and click[0] == 1:
-                    buttons(button["action"], data)
-                    return current_state
-
             # Drawing Main Menu button
             back_button = pygame.Rect(20, 20, 150, 36)
             screen.blit(button_image, (back_button.x, back_button.y))
@@ -320,16 +290,26 @@ def play():
 
             pygame.display.update()
 
-            mouse = pygame.mouse.get_pos()
-            click = pygame.mouse.get_pressed()
-
-            if back_button.collidepoint(mouse) and click[0] == 1:
-                clickSound.play()
-                return "main_menu"
+            # For clicking on buttons
+            for event in pygame.event.get():
+                if event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
+                    clickSound.play()
+                    if back_button.collidepoint(event.pos):
+                        return "main_menu"
+                    for button in current_location["buttons"]:
+                        button_rect = pygame.Rect(button["position"][0], button["position"][1], 150, 36)
+                        if button_rect.collidepoint(event.pos):
+                            buttons(button["action"], data)
+                            return current_state
+                # For exit event (ESC and X button)
+                if event.type == pygame.QUIT:
+                    sys.exit(0)
+                elif event.type == pygame.KEYDOWN and event.key == pygame.K_ESCAPE:
+                    return "main_menu"
 
 # Main loop
 while True:
-    clock.tick(30) # 30FPS
+    clock.tick(30) # FPS
 
     if current_state == "main_menu":
         main_menu()
